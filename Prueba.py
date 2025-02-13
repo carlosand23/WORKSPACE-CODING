@@ -2,7 +2,19 @@
 #resultado = hola + 3
 #print(resultado)
 llueve = True
-if llueve:
-    print("Saca tu paraguas")
-else:
-    print("Disfruta de un dia sin lluvia")
+#if llueve:
+    #print("Saca tu paraguas")
+#else:
+    #print("Disfruta de un dia sin lluvia")
+
+Edad = 15
+Mayor_de_edad = Edad >= 18
+Menor_de_edad = Edad < 18
+#print(Mayor_de_edad)
+
+contador = 1
+#while contador <= 10:
+   # print ("repite", contador)
+   # contador += 1
+    
+print("hello world!!!")
