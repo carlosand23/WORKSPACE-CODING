@@ -17,4 +17,12 @@ contador = 1
    # print ("repite", contador)
    # contador += 1
     
-print("hello world!!!")
+#print("hello world!!!")
+
+#Tipos_de_personas_en_el_trabajo = ["vagos", "trabajadores", "reposeros", "intelectuales", "exitosos", "aplicados"]
+#for tipo_de_trabajador in Tipos_de_personas_en_el_trabajo:
+    #print(tipo_de_trabajador)
+
+Deportes = ["basket", "rugby", "tenis"]
+for sport in Deportes:
+    print(sport)
