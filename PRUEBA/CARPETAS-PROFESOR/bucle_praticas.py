@@ -118,13 +118,13 @@
 
 #Dadas dos listas de cadenas, concatena 
 # los elementos en la misma posición y almacena el resultado en una tercera lista    
-lista_1 = ["Sevilla", "Granada", "Cadiz", "Chiclana"]
-lista_2 = [" Caracas", " Maracay", " Valencia", " Margarita"]
-Resultado = []
+#lista_1 = ["Sevilla", "Granada", "Cadiz", "Chiclana"]
+#lista_2 = [" Caracas", " Maracay", " Valencia", " Margarita"]
+#Resultado = []
 
-for i in range(len(lista_1)):
-    Resultado.append(lista_1[i] + lista_2[i])
-print(Resultado)    
+#for i in range(len(lista_1)):
+#    Resultado.append(lista_1[i] + lista_2[i])
+#print(Resultado)    
 
 #Dadas dos listas de nombres y apellidos, concatena los elementos en la misma posición 
 #en formato "Apellido, Nombre" y almacena el resultado en una tercera lista
@@ -155,5 +155,22 @@ print(Resultado)
 #    resultado.append(lista_1[i] * lista_2[i])
 #print(resultado)
             
+# Dado un string, utiliza un bucle for para contar cuántas veces aparece la 
+# letra 'a' en el string
+#palabra = "raperas"
+#letra = "a"
+#conteo = 0
+
+#for i in palabra:
+#    if i == letra:
+#        conteo += 1
+#print(conteo)
+
+# Escribe un script que cuente desde 1 hasta un número n proporcionado por 
+# el usuario, imprimiendo cada número
+numero = int(input("ingrese un numero:  "))
+
+for i in range(1,numero+1):
+        print(i)
     
     
