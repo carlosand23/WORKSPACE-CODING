@@ -168,9 +168,57 @@
 
 # Escribe un script que cuente desde 1 hasta un número n proporcionado por 
 # el usuario, imprimiendo cada número
-numero = int(input("ingrese un numero:  "))
+#numero = int(input("ingrese un numero:  "))
 
-for i in range(1,numero+1):
-        print(i)
-    
+#for i in range(1,numero+1):
+#        print(i)
+
+# Crea un programa que sume números introducidos por el usuario hasta que el 
+# usuario introduzca 0. Al final, el programa debe mostrar la suma total
+#suma = 0
+#numero = int(input("Introduce un número (0 para terminar): "))
+#while numero != 0:
+#    suma += numero
+#    numero = int(input("Introduce otro número (0 para terminar): "))
+#print("La suma total es:", suma)
+
+#que se repita un saludo solo 5 veces
+#saludo = "Hola amigo, como estas?"
+#contador = 0
+
+#while contador <= 5:
+#        print(saludo)
+#        contador += 1
+#print("ok, no hace falta que me digas nada, ya se que estas bien")
+
+#Escribe un programa que pida al usuario un número y luego sume todos
+# los números desde 1 hasta ese número utilizando un bucle while 7 
+#numero = int(input("Introduce un numero  "))
+#suma = 0
+#contador = 1
+
+#while contador <= numero:
+#        suma += contador 
+#        contador += 1
+#print(suma)
+
+#Adivina el número:
+#Crea un programa que genere un número aleatorio entre 1 y 100, y luego pida al usuario que adivine el número.
+# El programa debe indicar si el número ingresado es mayor o menor que el número generado, y seguir pidiendo números
+# hasta que el usuario adivine correctamente.
+
+import random
+numero_secreto = random.randint(1,100)
+numero_usuario = int(input("Adivina el numero:  "))
+
+while numero_usuario != numero_secreto:
+        if numero_usuario > numero_secreto:
+                print("muy alto")
+        elif numero_usuario < numero_secreto:
+                print("muy bajo")
+        numero_usuario = int(input("Intentalo de nuevo  "))
+print("Felicidades lo has logrado!")
+
+        
+
     
