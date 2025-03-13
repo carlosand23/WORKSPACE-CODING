@@ -207,18 +207,64 @@
 # El programa debe indicar si el número ingresado es mayor o menor que el número generado, y seguir pidiendo números
 # hasta que el usuario adivine correctamente.
 
-import random
-numero_secreto = random.randint(1,100)
-numero_usuario = int(input("Adivina el numero:  "))
+#import random
+#numero_secreto = random.randint(1,100)
+#numero_usuario = int(input("Adivina el numero:  "))
 
-while numero_usuario != numero_secreto:
-        if numero_usuario > numero_secreto:
-                print("muy alto")
-        elif numero_usuario < numero_secreto:
-                print("muy bajo")
-        numero_usuario = int(input("Intentalo de nuevo  "))
-print("Felicidades lo has logrado!")
+#while numero_usuario != numero_secreto:
+#        if numero_usuario > numero_secreto:
+#                print("muy alto")
+#        elif numero_usuario < numero_secreto:
+#                print("muy bajo")
+#        numero_usuario = int(input("Intentalo de nuevo  "))
+#print("Felicidades lo has logrado!")
 
-        
+#Escribe un programa que pida al usuario un número y cuente cuántos dígitos tiene utilizando un bucle while
+
+# Crea un programa que sume números introducidos por el usuario hasta que el 
+# usuario introduzca 0. Al final, el programa debe mostrar la suma total.
+#suma = 0
+#num_usuario = int(input("Introduzca un numero:  "))
+
+#while num_usuario != 0:
+#        suma+= num_usuario
+#        num_usuario = int(input("Introduzca otro numero:  "))
+#print(f"La suma total de todos los numeros introducidos es de {suma}")
+
+#otra forma de hacerlo:
+#suma = 0
+
+#while True:
+#        numero_usuario = int(input(f"Introduzca un numero:  ")) 
+#        if numero_usuario == 0:
+#                break
+#        suma += numero_usuario
+#print(f"Has salido del bucle, la suma de tus numeros es: {suma}")  
+
+# Implementa un programa que le pida al usuario introducir números hasta que 
+# introduzca el número 5. Cuando eso ocurra, el programa debe imprimir un 
+# mensaje indicando que se encontró el número 5
+#while True:
+#        numero = int(input("Adivina el numero: "))
+#        if numero == 5:
+#                break 
+#print("lo lograste, adivinaste")
+
+# Escribe un programa que pida al usuario que ingrese números. 
+# Si el número ingresado es negativo, el programa debe ignorarlo y pedir otro número. 
+# Si el número es positivo, el programa debe sumarlo. 
+# El programa debe detenerse cuando el usuario ingrese 0 y mostrar la suma de todos 
+# los números positivos ingresados.
+
+suma = 0 
+while True:
+        numero = int(input("Ingresa un numero: ")) 
+        if numero == 0:
+                break   
+        if numero < 0:
+                print("Solo puedes introducir numeros positivos") 
+                continue
+        suma += numero
+print(f"Lo adivinaste, la suma de numeros es {suma}")        
 
     
