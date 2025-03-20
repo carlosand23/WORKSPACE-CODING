@@ -58,6 +58,25 @@ class Estudiante(Persona):
         self.notas = notas
         self.universidad = universidad
 
+class Artista:
+    def __init__(self, habilidad):
+        self.habilidad = habilidad
+    
+    def MostrarHabilidad(self):
+        print(f"Mi habilidad es: {self.habilidad}")
+        
+class EmpleadoArtista(Persona,Artista):
+    def __init__(self, nombre, edad, nacionalidad,habilidad, salario, empresa):
+        Persona().__init__(nombre, edad, nacionalidad)
+        Artista().__init__(habilidad)
+        self.salario = salario
+        self.empresa = empresa 
+        
+    
+  
+        
+
+
 jorge = Empleado("Jorge", 35, "venezolano", "programador", 2500)
 juan = Estudiante("Juan", 19, "ecuatoriano", 9.5, "UDLA")
 print(jorge.nacionalidad)
@@ -65,6 +84,8 @@ jorge.Hablar()
 
 print(juan.universidad)  
 juan.Hablar()
+
+
 
 
   
